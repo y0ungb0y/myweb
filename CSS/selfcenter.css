@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.user-actions {
+    float: right;
+    margin-top: 10px;
+}
+
+.user-actions a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.user-actions a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+.grade-select {
+  
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 200px;
+}
+
+.grade-select select {
+    padding: 0.5rem;
+    font-size: 16px;
+}
+/* 框架搭建 */
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input[type="password"] {
+    display: inline-block;
+    width: 250px;
+    padding: 6px;
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px; /* 设置边框圆角 */
+    box-sizing: border-box; /* 让内边距和边框不会增加元素的实际尺寸 */
+
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.performance {
+    text-align: center;
+    margin-top: 50px;
+}
