@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./CSS/selfcenter.css">
+</head>
+<body>
+    <div class="user-actions">
+        <a href="./login.html" >登录</a>
+        <a href="./login.html" >注册</a>
+    </div>
+    <header>
+
+        <h1>小学必刷题</h1>
+    </header>
+    <div class="grade-select">
+        <label for="grade" style="color: #fff;">选择年级：</label>
+        <select id="grade" name="grade">
+            <option value="1">一年级</option>
+            <option value="2">二年级</option>
+            <option value="3">三年级</option>
+            <option value="4">四年级</option>
+            <option value="5">五年级</option>
+            <option value="6">六年级</option>
+        </select>
+    </div>
+    <nav>
+        <a href="./index.html" >首页</a>
+        <a href="./wrongs.html"  >错题库</a>
+        <a href="./selfcenter.html" >个人中心</a>
+
+    </nav>
+    <!-- /* 框架搭建 */ -->
+    <div class="container">
+        <h1>个人中心</h1>
+
+        <div class="form-group">
+            <label for="current-password" style="position: relative; right: 20px;">当前密码:</label>
+            <input type="password" class="input-field " style="position: relative; left: -2px;"id="current-password" required>
+            <br>
+        </div>
+
+        <div class="form-group">
+            <label for="new-password" style="position: relative; right: 20px;">新密码:</label>
+            <input type="password" class="input-field " style="position: relative; left: 6px;" id="new-password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password" style="position: relative; right: 20px;">确认新密码:</label>
+            <input type="password" class="input-field" id="confirm-password" style="position: relative; left: -10px;" required>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn" onclick="changePassword()">修改密码</button>
+            <button class="btn btn-danger" onclick="logout()">退出登录</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        function changePassword() {
+            // 获取输入的密码并进行修改密码的操作
+            var currentPassword = document.getElementById('current-password').value;
+            var newPassword = document.getElementById('new-password').value;
+            var confirmPassword = document.getElementById('confirm-password').value;
+
+            // 执行修改密码的逻辑，可以通过Ajax请求将数据发送到后端进行处理
+            // 这里只是一个简单的前端示例，实际应用中需要与后端交互来处理密码修改操作
+            if (currentPassword && newPassword && confirmPassword && newPassword === confirmPassword) {
+                alert('密码修改成功！');
+            } else {
+                alert('密码修改失败，请检查输入的密码是否正确。');
+            }
+        }
+
+        function logout() {
+            // 执行退出登录的操作，例如跳转到登录页面
+            // window.location.href = 'logout.php';
+            alert('退出登录成功！');
+        }
+    </script>
+
+    <footer>
+        刷题网站 &copy; 2023. All Rights Reserved.
+    </footer>
+</body>
+</html>

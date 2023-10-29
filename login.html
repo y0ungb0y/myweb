@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录和注册</title>
+    <link rel="stylesheet" href="./CSS/login.css">
+</head>
+
+<body>
+    <div class="user-actions">
+        <a href="./login.html" >登录</a>
+        <a href="./login.html" >注册</a>
+    </div>
+    <header>
+
+        <h1>小学必刷题</h1>
+    </header>
+    <div class="grade-select">
+        <label for="grade" style="color: #fff;">选择年级：</label>
+        <select id="grade" name="grade">
+            <option value="1">一年级</option>
+            <option value="2">二年级</option>
+            <option value="3">三年级</option>
+            <option value="4">四年级</option>
+            <option value="5">五年级</option>
+            <option value="6">六年级</option>
+        </select>
+    </div>
+    <nav>
+        <a href="./index.html" >首页</a>
+        <a href="./wrongs.html"  >错题库</a>
+        <a href="./selfcenter.html" >个人中心</a>
+    </nav>
+    <!-- /* 框架搭建 */ -->
+    <div class="container" >
+        <div class="form-container">
+            <h2>登录</h2>
+            <form action="login.php" method="post">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <h2>注册</h2>
+            <form action="register.php" method="post">
+                <label for="new-username">用户名:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-password">密码:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <button type="submit">注册</button>
+            </form>
+        </div>
+    </div>
+        <footer>
+        刷题网站 &copy; 2023. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
